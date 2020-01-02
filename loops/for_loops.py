@@ -9,5 +9,5 @@ def for_each():
     :return:
     """
     languages = ["estonian", "english", "russian"]
-    for x in languages:
-        print(x)
+    for language in languages:
+        print(language)
