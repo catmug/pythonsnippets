@@ -14,9 +14,19 @@ def for_each():
 
 def for_with_index():
     """
-    #python #for #index
+    #python #for #index #enumerate
     :return:
     """
     cars = ["elantra", "passat"]
     for i, car in enumerate(cars, start=1):
         print(i, car)
+
+
+def for_with_range():
+    """
+    #python #for #index
+    :return:
+    """
+    cars = ["elantra", "passat"]
+    for i in range(0, len(cars)):
+        print(cars[i])
