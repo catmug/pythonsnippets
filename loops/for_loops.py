@@ -30,3 +30,13 @@ def for_with_range():
     cars = ["elantra", "passat"]
     for i in range(0, len(cars)):
         print(cars[i])
+
+
+def for_with_range_backwards():
+    """
+        #python #for #index #range 
+        :return:
+        """
+    cars = ["elantra", "passat"]
+    for i in range(len(cars) - 1, -1, -1):
+        print(cars[i])

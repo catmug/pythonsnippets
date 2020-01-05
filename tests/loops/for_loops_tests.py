@@ -29,6 +29,13 @@ class TestLoops(unittest.TestCase):
         """
         for_loops.for_with_range()
         self.assertEqual(mock_stdout.getvalue(), 'elantra\npassat\n')
+    @unittest.mock.patch('sys.stdout', new_callable=io.StringIO)
+    def test_for_with_range_backwards(self, mock_stdout):
+        """
+        Test for loop with range backwards.
+        """
+        for_loops.for_with_range_backwards()
+        self.assertEqual(mock_stdout.getvalue(), 'passat\nelantra\n')
 
 if __name__ == '__main__':
     unittest.main()
